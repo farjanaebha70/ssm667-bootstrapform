@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Form Validation</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+</head>
+  <body>
+
+ 
+<!--form validation 2-->
+
+<div class="container background">
+<form class="row needs-validation" novalidate>
+  <div class="col-md-6">
+    	<label for="first_name" class="form-label first_name">First name</label>
+   		<input type="text" class="form-control first_name" id="first_name" placeholder="Enter your firstname" required>
+    	<div class="valid-feedback">
+     		Looks good!
+    	</div>
+    	<div class="invalid-feedback">
+        Please enter your firstname
+      </div>
+  </div>
+  <div class="col-md-6">
+    <label for="last_name" class="form-label last_name">Last name</label>
+    <input type="text" class="form-control last_name" id="last_name" placeholder="Enter your lastname" required>
+	    <div class="valid-feedback">
+	      Looks good!
+	    </div>
+	    <div class="invalid-feedback">
+	      Please enter your lastname
+	     </div>
+  </div>
+  
+  <div class="col-md-6">  
+		<label for="email_address" class="form-label" >Email address</label>
+		<input type="email" class="form-control email_address" id="email_address"  placeholder="Enter email" required>
+		<div class="valid-feedback">
+	    Looks good!
+	  </div>
+	  <div class="invalid-feedback">
+	    Please enter your valid email
+	  </div>
+		    
+	</div>
+	<div class="col-md-6">
+		<label for="password" class="form-label" >Password</label>
+		<input type="password" class="form-control password" id="password" placeholder="Password" name="password" required>
+		</div>
+		
+  
+  <div class="col-md-6">
+    <label for="street" class="form-label street">Street</label>
+    <input type="text" class="form-control" id="street" placeholder="Enter your street address" required>
+    <div class="invalid-feedback">
+      Please provide a valid street name.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="city" class="form-label city">City</label>
+    <select class="form-select" id="city" name="city" required>
+      <option selected disabled value="">Choose...</option>
+      <option value="Dhaka">Dhaka</option>
+      <option value="Barishal">Barishal</option>
+      <option value="Khulna">Khulna</option>
+      <option value="Rajshahi">Rajshahi</option>
+      <option value="Rangpur">Rangpur</option>
+      <option value="Sylhet">Sylhet</option>
+      <option value="Mymensingh">Mymensingh</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="postcode" class="form-label postcode">Postcode</label>
+    <input type="text" class="form-control postcode" id="postcode" required>
+    <div class="invalid-feedback">
+      Please provide a valid postcode.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input form-label" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label form-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback form-label">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary sbt " type="submit">Submit</button>
+  </div>
+</form>
+
+</div>
+
+  	<!--form validation 2-->
+
+
+
+    <!--js-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+	
+	
+	
+	
+	
+</body>
+</html>

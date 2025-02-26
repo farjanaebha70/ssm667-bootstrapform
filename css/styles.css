@@ -1,0 +1,22 @@
+h1{
+	color:red;
+}
+
+.background{
+	background-color: #c8f1f1;
+	padding:30px 10px;
+}
+
+.sbt{
+	margin-top:20px;
+	background-color: #23bbbb;
+}
+
+.label{
+	margin:5px 0px;
+}
+
+.form-label {
+  
+  margin-top: 1rem;
+}
